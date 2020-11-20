@@ -1,0 +1,70 @@
+$pbo-color: #97a1a8;
+$rx-color: #28a1ed;
+$transition-duration: 750ms;
+
+circle,
+line {
+  transition-property: fill, stroke, opacity;
+  transition-duration: $transition-duration;
+  transition-timing-function: linear;
+}
+
+circle.datum {
+  fill: #000000;
+  stroke: none;
+}
+
+circle.pbo-datum {
+  fill: $pbo-color;
+  stroke: none;
+}
+
+circle.rx-datum {
+  fill: $rx-color;
+  stroke: none;
+}
+
+line {
+  stroke-linecap: round;
+}
+
+line.pbo-line {
+  stroke: $pbo-color;
+  fill: none;
+}
+
+line.rx-line {
+  stroke: $rx-color;
+  fill: none;
+}
+
+line.mean {
+  stroke-width: 2;
+  stroke-dasharray: 3 4;
+}
+
+line.regression {
+  stroke-width: 4;
+  stroke-dasharray: none;
+}
+
+line.mean-difference {
+  stroke: black;
+  stroke-width: 2;
+  stroke-dasharray: none;
+}
+
+line.mediator-effect {
+  stroke: black;
+  stroke-width: 4;
+  stroke-dasharray: none;
+}
+
+circle.lighten,
+line.lighten {
+  opacity: 0.5;
+}
+
+tspan.text-muted {
+  fill: #6c757d;
+}

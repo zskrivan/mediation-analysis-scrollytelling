@@ -1,0 +1,23 @@
+name: "github-actions"
+
+on:
+  pull_request:
+    branches:
+      - master
+      - develop
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install npm packages
+        run: npm install
+      - name: run eslint checks
+        run: npm run lint
+      - name: build typescript project
+        run: npm run build
