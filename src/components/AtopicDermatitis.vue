@@ -23,7 +23,7 @@ export default class AtopicDermatitis extends Vue {
       <div class="row">
         <div class="col-12 col-lg-8 col-xl-6">
           <div id="atopic-dermatitis-card">
-            <h1>Autoimmune</h1>
+            <h1>Immunology</h1>
             <h2>Mediation Analysis</h2>
             <p>
               A mediation model seeks to identify and explain the mechanism or
